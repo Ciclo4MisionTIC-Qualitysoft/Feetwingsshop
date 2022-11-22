@@ -55,6 +55,7 @@ function AdminTablaProductos() {
       genero,
       marca,
       precio,
+      descripcion,
       imagen,
       cantidad,
       reviews,
@@ -296,6 +297,13 @@ function AdminTablaProductos() {
             type="text"
             value={nombre}
             onChange={(e) => setnombre(e.target.value)}
+          />
+        </Modal.Body>
+        <Modal.Body>
+          <input
+            type="text"
+            value={descripcion}
+            onChange={(e) => setdescripcion(e.target.value)}
           />
         </Modal.Body>
         <Modal.Body>

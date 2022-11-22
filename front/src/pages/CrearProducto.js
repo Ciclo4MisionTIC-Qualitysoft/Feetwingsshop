@@ -25,6 +25,7 @@ function CrearProducto() {
         genero,
         marca,
         precio,
+        descripcion,
         cantidad,
         reviews:[],
         imagen:result

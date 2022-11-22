@@ -1,6 +1,8 @@
+const server = "https://feetwingsshop-back.herokuapp.com"
+
 export const generarVenta = async (data) => {
     try{
-        const res = await fetch('http://localhost:4000/api/v1/ventas',{
+        const res = await fetch(`${server}/api/v1/ventas`,{
             method:"POST",
             headers: {
                 'Content-Type': 'application/json'
@@ -16,7 +18,7 @@ export const generarVenta = async (data) => {
 
 export const ventasPorUsuario = async (id) => {
     try{
-        const res = await fetch(`http://localhost:4000/api/v1/ventas/cliente/${id}`)
+        const res = await fetch(`${server}/api/v1/ventas/cliente/${id}`)
         return await res.json()
     } catch(err){
         return err
@@ -25,7 +27,7 @@ export const ventasPorUsuario = async (id) => {
 
 export const todasLasVentas = async () => {
     try{
-        const res = await fetch(`http://localhost:4000/api/v1/ventas`)
+        const res = await fetch(`${server}/api/v1/ventas`)
         return await res.json()
     } catch(err){
         return err

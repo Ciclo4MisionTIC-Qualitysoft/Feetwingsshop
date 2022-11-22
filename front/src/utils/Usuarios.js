@@ -1,6 +1,8 @@
+const server = "https://feetwingsshop-back.herokuapp.com"
+
 export const login = async (data) => {
     try{
-        const res = await fetch('http://localhost:4000/api/v1/usuarios/login',{
+        const res = await fetch(`${server}/api/v1/usuarios/login`,{
             method:"POST",
             headers: {
                 'Content-Type': 'application/json'
@@ -16,7 +18,7 @@ export const login = async (data) => {
 
 export const registrar = async (data) => {
     try{
-        const res = await fetch('http://localhost:4000/api/v1/usuarios',{
+        const res = await fetch(`${server}/api/v1/usuarios`,{
             method:"POST",
             headers: {
                 'Content-Type': 'application/json'
