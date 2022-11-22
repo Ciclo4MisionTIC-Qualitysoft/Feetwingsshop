@@ -128,6 +128,7 @@ function CrearProducto() {
               >
                 <option value="Mujer">Mujer</option>
                 <option value="Hombre">Hombre</option>
+                <option value="Niños">Niños</option>
               </Form.Select>
             </Form.Group>
 
